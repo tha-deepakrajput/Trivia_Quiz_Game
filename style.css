@@ -80,6 +80,7 @@ h1 {
     font-weight: 600;
     border-radius: 5px;
     padding: 1rem;
+    border: 1px solid black;
 }
 .input_box label {
     font-size: medium;
