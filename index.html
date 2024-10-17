@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style_02.css"> -->
+</head>
+<body>
+    <!-- FIRST PAGE -->
+    <div id="first_page">
+        <div class="box1">
+            <h1 class="text_in_mid">WELCOME</h1>
+            <h2 class="text_in_mid">TRIVIA QUIZE GAME</h2>
+            <div class="btn_box">
+                <button type="button" id="start_btn" class="start_button" >START</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECOND PAGE -->
+    <div id="second_page" style="display: none;" class="hidden">
+        <div class="box">
+            <h2>TRIVIA QUIZE GAME</h2>
+            <div class="input_box">
+                <label for="first_player">FIRST PLAYER</label>
+                <input type="text" placeholder="First Player" id="first_player" required>
+                <br>
+                <label for="second_player">SECOND PLAYER</label>
+                <input type="text" id="second_player" placeholder="Second Player" required>
+            </div>
+            <button id="start_game" class="start_button" type="button">START GAME</button>
+        </div>
+     </div>
+     
+    <script src="code.js"></script>
+</body>
+</html>
