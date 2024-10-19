@@ -142,7 +142,7 @@ function showQuestions(allQuestionsDifficulties) {
                 check_ans(answer, ques.correctAnswer);
             });
         });
-    
+        
         document.body.append(ul);
 
     }
@@ -207,11 +207,6 @@ function resetIndex() {
     curr_index = 0;        // Reset the current index
 }
 
-// function to reset the score 
-function resetScore() {
-    scores.first_player = 0;
-    scores.second_player = 0;
-}
 // function to end the game 
 function end_game() {
     document.body.innerHTML = '';
@@ -234,12 +229,11 @@ function end_game() {
         first_h2.textContent = `The Game is Tie.`;
     }
 
-    startNewGame.textContent = 'Go To Home Page';
+    startNewGame.textContent = 'Go To Welcome Page';
     startNewGame.classList.add('starNew_game');
     startNewGame.addEventListener('click', () => {
         resetIndex();
-        resetScore();
-        homePage();
+        welcomePage();
     });
     end_container.append(first_h2);
     end_container.append(second_h2);
@@ -248,6 +242,6 @@ function end_game() {
 }
 
 // function to reload the page 
-function homePage() {
+function welcomePage() {
     location.reload();
 }
